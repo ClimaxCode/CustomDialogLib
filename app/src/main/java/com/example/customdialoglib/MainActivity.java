@@ -12,8 +12,8 @@ import com.example.dialoglib.DialogClickListener;
 
 public class MainActivity extends AppCompatActivity implements DialogClickListener {
 
-    Button ok,cancel;
-    MyCustomDialog dialog;
+   private Button ok,cancel;
+    private MyCustomDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
