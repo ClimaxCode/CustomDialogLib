@@ -1,0 +1,3 @@
+include ':DialogLib'
+include ':app'
+rootProject.name = "CustomDialogLib"
