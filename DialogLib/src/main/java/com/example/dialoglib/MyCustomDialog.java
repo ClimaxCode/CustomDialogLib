@@ -91,16 +91,6 @@ public class MyCustomDialog extends Dialog{
         return ratingBar.getRating();
     }
 
-
-
-/*
-    public CustomDialog(Context context, AttributeSet attrs) {
-        super(context, attrs);
-      //  initialize(context);
-    }
-*/
-
-
 /*    public static void s(Context c, String message){
         Toast.makeText(c,message, Toast.LENGTH_SHORT).show();
     }*/
