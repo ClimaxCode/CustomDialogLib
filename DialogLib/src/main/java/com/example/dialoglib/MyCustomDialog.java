@@ -3,6 +3,7 @@ package com.example.dialoglib;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -25,8 +26,10 @@ public class MyCustomDialog extends Dialog{
         this.onItemClickListener = onItemClickListener;
        // initialize(context);
          dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         // Include dialog.xml file
         dialog.setContentView(R.layout.layout);
+
         // Set dialog title
         //dialog.setTitle("Custom Dialog");
 
