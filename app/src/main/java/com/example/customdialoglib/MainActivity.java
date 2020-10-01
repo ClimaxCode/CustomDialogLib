@@ -13,19 +13,26 @@ import com.example.dialoglib.DialogClickListener;
 public class MainActivity extends AppCompatActivity implements DialogClickListener {
 
     private MyCustomDialog dialog;
+    private Button showDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        dialog = new MyCustomDialog(this,this);
+
+        showDialog = findViewById(R.id.dialogBtn);
+        showDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.show();
+            }
+        });
 
         //CustomDialog.s(getApplicationContext(),"welcome to library project");
-        dialog = new MyCustomDialog(this,this);
        // dialog.setTitle("ClimaxCode");
        // dialog.setDescription("Please give us ratings");
        // dialog.setIcon(R.drawable.ic_launcher_background);
-        dialog.show();
-        //setContentView(v);
 
     }
 
