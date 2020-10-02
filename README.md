@@ -1,4 +1,4 @@
-CustomDialogLib for Rating:
+Custom Dialog Library for Rating the App:
 
 Supported features:
 defining custom dialog's title, description and icon
