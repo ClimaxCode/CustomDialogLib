@@ -1,17 +1,19 @@
-Custom Dialog Library for Rating the App:
+**Custom Dialog Library for Rating the App:**
 
 Supported features:
 defining custom dialog's title, description and icon
 custom rating scope (number of stars)
 provide overrided method for cancel and submit button
 
-Screen Shots:
+**Screen Shots:**
 
-Getting started:
 
-Integration:
 
-Step 1:
+**Getting started:**
+
+**Integration:**
+
+**Step 1:**
 Add it in your root build.gradle at the end of repositories:
 	allprojects {
 		repositories {
@@ -20,12 +22,12 @@ Add it in your root build.gradle at the end of repositories:
 		}
 	}
   
-  Step 2: 
+ ** Step 2: **
   Add the dependency
   implementation 'com.github.ClimaxCode:CustomDialogLib:0.1.0'
 
 
-Setup and create dialog:
+**Setup and create dialog:**
 
 public class MainActivity extends AppCompatActivity implements DialogClickListener {
 
